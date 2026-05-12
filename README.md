@@ -95,3 +95,26 @@ If you use the work from this repository in your research, please cite:
   howpublished = {\url{https://github.com/Shybert-AI/UniGen-MOE}},
   note = {arXiv preprint}
 }
+
+Also please cite the underlying base model:
+
+```bibtex
+@misc{kiwi2026,
+  title = {Kiwi-Edit: Versatile Video Editing via Instruction and Reference Guidance},
+  author = {Y. Lin and others},
+  year = {2026},
+  eprint = {arXiv:2603.02175},
+}
+```
+
+---
+
+## 📜 License
+This project is open-sourced under the MIT License. Model weights follow the original base model (Wan2.2) open-source agreement.
+
+---
+
+<p align="center">
+  <i>Fill enough potholes, and a road appears.</i>
+</p>
+```
