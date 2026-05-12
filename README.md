@@ -41,7 +41,7 @@ Deadlock is not random. It concentrates heavily in **shallow visual processing l
 ### 3. The bfloat16 Precision Trap
 At tiny initialization scales and large weight magnitudes, optimizer updates fall below the hardware's minimum resolvable step in bfloat16. Weights get **truncated to zero** silently — an easily overlooked numerical pitfall.
 
-<img width="1357" height="469" alt="Routing diagnosis overview" src="https://github.com/user-attachments/assets/f88afa07-3b90-4bfd-9294-ce71f71c2973" />
+<img width="1380" height="473" alt="image" src="https://github.com/user-attachments/assets/f4a7d94d-2744-4e59-8444-abb42ac0f850" />
 
 ---
 
