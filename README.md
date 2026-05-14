@@ -76,7 +76,6 @@ I am currently advancing this work in the following directions and welcome all f
 
 - **Resource Collaboration**: Seeking compute sponsorship to scale the diagnostic framework to 7B+ parameter models, empirically locating the critical point predicted by the Functional Redundancy Hypothesis.
 - **Academic Collaboration**: Co-authoring technical reports or benchmarking against emerging industry paradigms.
-- **Product Landing**: Exploring the application of these diagnostic insights to real-world AI products, such as an AI video calling app, to accelerate technology commercialization.
 
 If you share a curiosity about the fundamental mechanics of visual MoE, or wish to support independent research, please reach out.
 
