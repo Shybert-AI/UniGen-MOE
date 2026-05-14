@@ -45,7 +45,7 @@ At tiny initialization scales and large weight magnitudes, optimizer updates fal
 
 ---
 
-## 📖 The Full Story (Chinese Series)
+## 📖 The Full Story
 
 This project is accompanied by a detailed, three-part technical narrative chronicling the entire journey — from a naive MoE conversion to a fully calibrated diagnostic framework.
 
