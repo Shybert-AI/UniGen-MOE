@@ -13,7 +13,7 @@
 
 This is not a repository chasing State-of-the-Art. It is a **deep diagnostic report** on **Mixture-of-Experts routing in visual diffusion models**, authored by an **independent researcher**.
 
-Between 2025 and 2026, as ByteDance Mamoda2.5, Google DeepMind, and other giants aggressively push DiT architectures toward MoE-ification, I — as a solo developer — systematically uncovered a **"selective deadlock" pathology** in MoE routers during video generation training, all within the extreme constraints of a single **NVIDIA A100 (80GB) GPU** and **20,000 open-source data samples**.
+Between 2024 and 2026, Leading companies are actively promoting the development of DiT architecture towards MoE (Mixture-of-Experts), I — as a solo developer — systematically uncovered a **"selective deadlock" pathology** in MoE routers during video generation training, all within the extreme constraints of a single **NVIDIA A100 (80GB) GPU** and **20,000 open-source data samples**.
 
 ---
 
@@ -41,7 +41,7 @@ Deadlock is not random. It concentrates heavily in **shallow visual processing l
 ### 3. The bfloat16 Precision Trap
 At tiny initialization scales and large weight magnitudes, optimizer updates fall below the hardware's minimum resolvable step in bfloat16. Weights get **truncated to zero** silently — an easily overlooked numerical pitfall.
 
-<img width="1380" height="473" alt="image" src="https://github.com/user-attachments/assets/f4a7d94d-2744-4e59-8444-abb42ac0f850" />
+<img width="1357" height="469" alt="Routing diagnosis overview" src="https://github.com/user-attachments/assets/f88afa07-3b90-4bfd-9294-ce71f71c2973" />
 
 ---
 
@@ -61,7 +61,7 @@ This project is accompanied by a detailed, three-part technical narrative chroni
 
 ## 📂 Repository Status: Research Preview
 
-> ⚠️ **Code is currently not publicly available.** This project is in an active research phase, and the codebase is undergoing substantial restructuring for the next phase (dual-GPU full-expert collaborative training).
+> ⚠️ **Code is currently not publicly available.** This project is in an active research phase, and the codebase is undergoing substantial restructuring for the next phase (dual-GPU full-expert collaborative training). The code will be organized and open-sourced upon completion.
 
 What you can do right now:
 - **Read the paper** for complete methodology, experimental design, and the Functional Redundancy Hypothesis.
@@ -74,8 +74,9 @@ What you can do right now:
 
 I am currently advancing this work in the following directions and welcome all forms of exchange:
 
-- **Compute sponsorship**: Scale the diagnostic framework to 7B+ parameter models and empirically locate the critical point predicted by the Functional Redundancy Hypothesis.
-- **Academic collaboration**: Co-author technical reports or benchmark against emerging industry paradigms.
+- **Resource Collaboration**: Seeking compute sponsorship to scale the diagnostic framework to 7B+ parameter models, empirically locating the critical point predicted by the Functional Redundancy Hypothesis.
+- **Academic Collaboration**: Co-authoring technical reports or benchmarking against emerging industry paradigms.
+- **Product Landing**: Exploring the application of these diagnostic insights to real-world AI products, such as an AI video calling app, to accelerate technology commercialization.
 
 If you share a curiosity about the fundamental mechanics of visual MoE, or wish to support independent research, please reach out.
 
@@ -95,6 +96,7 @@ If you use the work from this repository in your research, please cite:
   howpublished = {\url{https://github.com/Shybert-AI/UniGen-MOE}},
   note = {arXiv preprint}
 }
+```
 
 Also please cite the underlying base model:
 
